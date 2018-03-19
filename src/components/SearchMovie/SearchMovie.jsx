@@ -73,8 +73,8 @@ export const mapDispatchToProps = dispatch => {
       dispatch(searchActions.setIsFromSubmitted(boolean));
     },
     fetchData: (searchPhrase, sortBy, searchBy) => {
-      const moviesUrl = 'http://api.tvmaze.com/search/shows';
-      const peoplesUrl = 'http://api.tvmaze.com/search/people';
+      const moviesUrl = 'https://api.tvmaze.com/search/shows';
+      const peoplesUrl = 'https://api.tvmaze.com/search/people';
 
       let url = (searchBy === '' || searchBy === 'title') ? moviesUrl : peoplesUrl;
 
