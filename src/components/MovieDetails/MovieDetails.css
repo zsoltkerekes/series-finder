@@ -1,0 +1,118 @@
+.MovieDetails {
+  color: #eee;
+  min-height: 60vh;
+}
+
+.MovieDetails a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.MovieDetails h1 {
+  font-size: 200%;
+  padding-bottom: 1em;
+}
+
+.MovieDetails .button {
+  float: right;
+  padding: .3em 5em;
+  transition: all .25s ease-in-out;
+  cursor: pointer;
+}
+
+.MovieDetails .button:hover {
+  background-color: rgb(23, 178, 189);
+}
+
+.MovieDetails .movie img {
+  float: left;
+  margin-right: 4em;
+  margin-bottom: 3em;
+  max-width: 25vw;
+  max-height: 60vh;
+}
+
+.MovieDetails h2 {
+  font-size: 200%;
+  padding-bottom: 1em;
+}
+
+.MovieDetails .imdb {
+  border: 2px solid rgb(23, 178, 189);
+  padding: .6em;
+  margin-left: 2em;
+  border-radius: 2em;
+  font-size: 55%;
+  background-color: rgba(23,178,189,0.2);
+  display: inline-block;
+  min-width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+}
+
+.MovieDetails .year {
+  font-size: 133%;
+  font-weight: bold;
+}
+
+.MovieDetails .genre {
+  padding-bottom: 2em;
+}
+
+.MovieDetails .plot {
+  line-height: 120%;
+  font-size: 120%;
+}
+@media all and (max-width:960px) {
+  .MovieDetails .movie img {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    max-width: 40vw;
+  }
+
+  .MovieDetails h2 {
+    text-align: center;
+    font-size: 140%;
+    position: relative;
+  }
+
+  .MovieDetails h2 .imdb {
+    margin: 1em 2em 0;
+  }
+
+  .MovieDetails .genre,
+  .MovieDetails .year {
+    text-align: center;
+    font-size: 110%;
+    margin: 0 0 .5em;
+    padding: 0;
+  }
+
+  .MovieDetails .plot {
+    line-height: 130%;
+    font-size: 100%;
+    text-align: justify;
+  }
+
+}
+@media all and (max-width:500px) {
+  .MovieDetails h1 {
+    font-size: 150%;
+    padding-bottom: 1em;
+  }
+
+  .MovieDetails .button {
+    padding: .5em;
+  }
+
+  .MovieDetails .movie img {
+    float: none;
+    margin: 0 5%;
+    max-width: none;
+    max-height: none;
+    height: auto;
+    width: 90%;
+  }
+}

@@ -1,0 +1,47 @@
+.RecommendedPersons {
+  min-height: calc(65vh - 14em);
+  text-align: center;
+}
+
+.RecommendedPersons h3 {
+  clear: both;
+  padding: 1em;
+  background-color: #eee;
+  color: #1c1c1c;
+  margin: 3em 0;
+}
+
+.RecommendedPersons .results {
+  padding: 1em;
+  background-color: #eee;
+  color: #1c1c1c;
+  margin-bottom: 3em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.RecommendedPersons .results p:nth-of-type(1) {
+  width: auto;
+  display: inline-block;
+}
+
+.RecommendedPersons .results p:nth-of-type(2) {
+  float: right;
+}
+
+.RecommendedPersons .results p span {
+  margin-left: 2em;
+  transition: color .2s ease-in-out;
+  cursor: pointer;
+}
+
+.RecommendedPersons .results p span.sortSelected,
+.RecommendedPersons .results p span:hover {
+  color: rgb(23, 178, 189);
+}
+@media all and (max-width:500px) {
+  .RecommendedPersons .movie,
+  .SearchResult .movie {
+    margin: .75em auto;
+  }
+}

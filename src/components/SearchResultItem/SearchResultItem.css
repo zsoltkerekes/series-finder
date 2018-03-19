@@ -1,0 +1,56 @@
+.RecommendedMovies .item,
+.RecommendedPersons .item,
+.SearchResult .item {
+  display: inline-block;
+  padding: 1em;
+  margin: 1em;
+  background-color: rgba(23, 178, 189,0.3);
+  color: #eee;
+  transition: .2s background-color ease-in-out;
+  vertical-align: top;
+}
+
+.RecommendedMovies .item:hover,
+.RecommendedPersons .item:hover,
+.SearchResult .item:hover {
+  background-color: rgba(23, 178, 189,0.6);
+}
+
+.RecommendedMovies .item img,
+.RecommendedPersons .item img,
+.SearchResult .item img {
+  width: 15em;
+  height: auto;
+}
+
+.RecommendedMovies .item p,
+.RecommendedPersons .item p,
+.SearchResult .item p {
+  text-align: left;
+  font-size: 90%;
+  clear: both;
+  padding: .5em 0;
+}
+
+.RecommendedMovies .item h2 span:nth-of-type(1),
+.RecommendedPersons .item h2 span:nth-of-type(1),
+.SearchResult .item h2 span:nth-of-type(1) {
+  max-width: 10em;
+  float: left;
+}
+
+.RecommendedMovies .item h2 span:nth-of-type(2),
+.RecommendedMovies .item p span:nth-of-type(2),
+.RecommendedPersons .item h2 span:nth-of-type(2),
+.RecommendedPersons .item p span:nth-of-type(2),
+.SearchResult .item h2 span:nth-of-type(2),
+.SearchResult .item p span:nth-of-type(2) {
+  float: right;
+}
+
+.RecommendedMovies .item h2,
+.RecommendedPersons .item h2,
+.SearchResult .item h2 {
+  text-align: left;
+  font-size: 90%;
+}

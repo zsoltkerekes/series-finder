@@ -1,0 +1,11 @@
+* {
+  user-select: none;
+}
+
+.container {
+  width: 95%;
+  padding:2.5%;
+  max-width: 80em;
+  margin: 0 auto;
+  color: #eee;
+}
